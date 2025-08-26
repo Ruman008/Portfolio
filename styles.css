@@ -1,0 +1,117 @@
+body {
+            /* Main background color from the palette */
+            background-color: #ece4e5;
+            color: #30333A;
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        section[id] {
+            scroll-margin-top: 8rem;
+        }
+        
+        .section-container {
+            /* A contrasting but subtle background color from the palette */
+            background-color: #9A8D96;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        
+
+        .main-heading {
+            font-size: clamp(2rem, 6vw, 4rem);
+            font-weight: 800;
+            line-height: 1.0;
+        }
+        
+        .sub-heading {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        /* Styling for the skills section */
+        .skills-expertise-item {
+            /* Subtle accent color */
+            background-color: #B79D9B;
+            color: #30333A;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .skills-software-item {
+            /* Another subtle background color */
+            background-color: #72676F;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff; /* White text for contrast */
+        }
+        .skills-software-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .skills-software-icon.python { background-color: #51403D; }
+        .skills-software-icon.java { background-color: #B79D9B; }
+        .skills-software-icon.js { background-color: #B0A6A7; color: #30333A;}
+        .skills-software-icon.sql { background-color: #30333A; }
+        .skills-software-icon.html-css { background-color: #72676F; }
+        .skills-software-icon.node { background-color: #9A8D96; }
+        .skills-software-icon.git { background-color: #B79D9B; }
+
+        .pill {
+            background-color: #B79D9B;
+            color: #30333A;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+        }
+
+        /* Mobile menu styles */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #B0A6A7;
+            z-index: 100;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .project-image-container {
+            width: 100%;
+            height: 18rem; /* Set a fixed height for consistency */
+            overflow: hidden; /* Hide parts of the image that overflow */
+            position: relative;
+        }
+
+        .project-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* This is the key change to make the image fit */
+            border-radius: 1.5rem;
+        }
